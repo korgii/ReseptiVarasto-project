@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ReseptiModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RecipeID>e34c6ce9-be8e-4752-801a-33a908296910</RecipeID>
+  <RecipeName>kissakakku</RecipeName>
+  <RecipeString>adsasdasdasd</RecipeString>
+  <IngredientModels>
+    <IngredientModel>
+      <IngredientName>maito</IngredientName>
+      <IngredientAmount>1</IngredientAmount>
+    </IngredientModel>
+  </IngredientModels>
+</ReseptiModel>

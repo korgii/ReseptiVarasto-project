@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ReseptiModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RecipeID>5d2054ea-1242-40e6-8fe6-748f5fa163a1</RecipeID>
+  <RecipeName>asd</RecipeName>
+  <RecipeString>asdasdasdasd</RecipeString>
+  <IngredientModels>
+    <IngredientModel>
+      <IngredientName>ddd</IngredientName>
+      <IngredientAmount>1</IngredientAmount>
+      <IngredientGuid>f3369ef6-29a5-4eaf-8d88-f875ba496882</IngredientGuid>
+    </IngredientModel>
+  </IngredientModels>
+</ReseptiModel>

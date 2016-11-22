@@ -1,0 +1,10 @@
+C:\Users\Jani\Documents\Visual Studio 2015\Projects\Reseptivarasto\Reseptivarasto\bin\Release\Reseptivarasto.exe.config
+C:\Users\Jani\Documents\Visual Studio 2015\Projects\Reseptivarasto\Reseptivarasto\bin\Release\Reseptivarasto.exe
+C:\Users\Jani\Documents\Visual Studio 2015\Projects\Reseptivarasto\Reseptivarasto\bin\Release\Reseptivarasto.pdb
+C:\Users\Jani\Documents\Visual Studio 2015\Projects\Reseptivarasto\Reseptivarasto\obj\Release\Reseptivarasto.Form1.resources
+C:\Users\Jani\Documents\Visual Studio 2015\Projects\Reseptivarasto\Reseptivarasto\obj\Release\Reseptivarasto.ModifyRecipe.resources
+C:\Users\Jani\Documents\Visual Studio 2015\Projects\Reseptivarasto\Reseptivarasto\obj\Release\Reseptivarasto.NewRecipe.resources
+C:\Users\Jani\Documents\Visual Studio 2015\Projects\Reseptivarasto\Reseptivarasto\obj\Release\Reseptivarasto.Properties.Resources.resources
+C:\Users\Jani\Documents\Visual Studio 2015\Projects\Reseptivarasto\Reseptivarasto\obj\Release\Reseptivarasto.csproj.GenerateResource.Cache
+C:\Users\Jani\Documents\Visual Studio 2015\Projects\Reseptivarasto\Reseptivarasto\obj\Release\Reseptivarasto.exe
+C:\Users\Jani\Documents\Visual Studio 2015\Projects\Reseptivarasto\Reseptivarasto\obj\Release\Reseptivarasto.pdb

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<ReseptiModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SerializableDicitonary>
+    <item>
+      <key>
+        <string>Maito</string>
+      </key>
+      <value>
+        <string>1</string>
+      </value>
+    </item>
+  </SerializableDicitonary>
+  <RecipeID>82a16d00-3f7f-4f1d-b5fc-f69823b09820</RecipeID>
+  <RecipeName>Testi</RecipeName>
+  <RecipeString>asddasdasdas</RecipeString>
+</ReseptiModel>
