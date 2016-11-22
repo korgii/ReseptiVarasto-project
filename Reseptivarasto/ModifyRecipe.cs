@@ -2,12 +2,12 @@
 using System.IO;
 using System.Windows.Forms;
 using System.Xml.Serialization;
+using Reseptivarasto.Models;
 
 namespace Reseptivarasto
 {
     public partial class ModifyRecipe : Form
     {
-        //Call applyvariables on set
         public ReseptiModel ReseptiModel { get { return m_ReseptiModel; } set { m_ReseptiModel = value; } }
         private ReseptiModel m_ReseptiModel;
 
@@ -17,7 +17,6 @@ namespace Reseptivarasto
         {
             InitializeComponent();
             FilePath = filePath;
-
             Shown += ModifyRecipe_Shown;
         }
 
@@ -29,19 +28,14 @@ namespace Reseptivarasto
             listBox1.DisplayMember = "IngredientNameReturn";
             listBox1.ValueMember = "IngredientGuid";
 
-            //List<string> temp = new List<string>();
-            foreach (var asd in ReseptiModel.IngredientModels){
-                //temp.Add(string.Format("{0} - {1}", asd.IngredientName, asd.IngredientAmount));           
-                listBox1.Items.Add(
-                    new IngredientModel
-                    {
+            foreach (var asd in ReseptiModel.IngredientModels){        
+                listBox1.Items.Add(new IngredientModel{
                         IngredientName = asd.IngredientName,
                         IngredientAmount = asd.IngredientAmount,
                         IngredientGuid = asd.IngredientGuid,
                         IngredientNameReturn = asd.IngredientNameReturn
                     });
             }
-            //temp.ForEach(r => listBox1.Items.Add(r));
         }
 
         //Tallenna resepti
@@ -70,11 +64,10 @@ namespace Reseptivarasto
             s.InitialDirectory = Application.StartupPath;
             s.Filter = "XML Files|*.xml";
 
-            //The fuck am doing?
-
             File.Delete(FilePath);
             FileStream stream = new FileStream(FilePath, FileMode.Create);
             xs.Serialize(stream, ReseptiModel);
+            stream.Close();
 
             MessageBox.Show("Resepti tallennettu!");
         }
@@ -82,17 +75,13 @@ namespace Reseptivarasto
         //Lisää ainesosa
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox2.Text))
-            {
+            if (string.IsNullOrEmpty(textBox2.Text)){
                 MessageBox.Show("Anna ainesosan nimi");
                 return;
             }
             // Ainesosan määrä on mahdollista jättää tyhjäksi
             listBox1.Items.Add(string.Format("{0} - {1}", textBox2.Text, textBox3.Text));
 
-            //var dic = new SerializableDictionary<string, string>();
-            //dic.Add(textBox2.Text, textBox3.Text);
-            //ReseptiModel.m_Ingredients.Add(dic);
             var d = new IngredientModel();
             d.IngredientName = textBox2.Text;
             d.IngredientAmount = textBox3.Text;

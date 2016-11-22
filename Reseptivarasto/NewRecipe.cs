@@ -2,6 +2,7 @@
 using System.IO;
 using System.Windows.Forms;
 using System.Xml.Serialization;
+using Reseptivarasto.Models;
 
 namespace Reseptivarasto
 {
@@ -22,7 +23,7 @@ namespace Reseptivarasto
                 MessageBox.Show("Anna ainesosan nimi");
                 return;
             }
-            // Ainesosan määrä on mahdollista jättää tyhjäksi
+
             listBox1.Items.Add(string.Format("{0} - {1}", textBox2.Text, textBox3.Text));
 
             var d = new IngredientModel();
@@ -63,6 +64,7 @@ namespace Reseptivarasto
                     if ((stream = s.OpenFile()) != null){
                         using (stream){
                             xs.Serialize(stream, m);
+                            stream.Close();
                         }
                     }
                 }

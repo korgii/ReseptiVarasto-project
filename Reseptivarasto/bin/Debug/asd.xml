@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<ReseptiModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RecipeID>95ddb1dc-4655-4d3e-93a8-a3955c8b4847</RecipeID>
+  <RecipeName>Kissa recipe</RecipeName>
+  <RecipeString>asdasdasdasd</RecipeString>
+  <IngredientModels>
+    <IngredientName>kissa</IngredientName>
+    <IngredientAmount>123</IngredientAmount>
+    <IngredientGuid>e4f29fee-bc16-4103-a3e8-9b02d8b57e3f</IngredientGuid>
+  </IngredientModels>
+  <IngredientModels>
+    <IngredientName>asdasd</IngredientName>
+    <IngredientAmount>222</IngredientAmount>
+    <IngredientGuid>0b4591b5-bf50-4714-94e4-e7312e8f7428</IngredientGuid>
+  </IngredientModels>
+</ReseptiModel>

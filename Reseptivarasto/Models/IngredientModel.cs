@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Reseptivarasto
+namespace Reseptivarasto.Models
 {
     public class IngredientModel
     {

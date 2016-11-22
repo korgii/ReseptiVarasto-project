@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
 using System.Xml.Serialization;
+using Reseptivarasto.Models;
 
 namespace Reseptivarasto
 {
@@ -34,8 +35,7 @@ namespace Reseptivarasto
 
             XmlSerializer serializer = new XmlSerializer(typeof(ReseptiModel));
 
-            if (o.ShowDialog() == DialogResult.OK)
-            {
+            if (o.ShowDialog() == DialogResult.OK){
                 try{
                     if ((stream = (FileStream)o.OpenFile()) != null){
                         using (stream){
@@ -60,7 +60,6 @@ namespace Reseptivarasto
             
             List<string> temp = new List<string>();
             foreach(var asd in ReseptiModel.IngredientModels){
-                //temp.Add(string.Join(" - ", asd.Select(x => x.Key + " " + x.Value).ToArray()));
                 temp.Add(string.Format("{0} - {1}", asd.IngredientName, asd.IngredientAmount));
             }
 
